@@ -1,0 +1,17 @@
+name: ReolinkANPR
+version: "1.0.0"
+slug: reolinkanpr
+description: Real-time ANPR for Reolink cameras with HA notifications
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: auto
+ports:
+  5001/tcp: 5001
+ports_description:
+  5001/tcp: Web dashboard
+map:
+  - share:rw
+options: {}
+schema: {}
